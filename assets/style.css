@@ -10,6 +10,9 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #2d2b30;
 }
 
@@ -32,18 +35,33 @@ p {
     margin-inline: 2vw;
 }
 
+.carousel-item {
+    height: 70vh;
+    width: 60vw;
+    object-fit: fill;
+}
+
+#carouselExample {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+}
+
+.col {
+    color: #b1b1b1;
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border: solid 1px #7f7f7f;
+    border-radius: 5px;
+    margin: 2px;
+}
+
 img {
-    height: 70vh;
-    width: 90vw;
-}
-
-.carousel {
-    margin: 20px;
-    width: 90vw;
-    height: 70vh;
-}
-
-.carousel-inner {
-    height: 70vh;
-    width: 90vw;
+    object-fit: fill;
+    width: 27vw;
+    height: auto;
 }
