@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Galleria Preciosa</a>
+            <a class="navbar-brand" href="#">Galeria Preciosa</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -37,30 +37,32 @@
         </div>
     </nav>
 
-    <h2 class="subtitle">Galleria de interiores y variados sacados de peliculas de Studio Ghibli</h2>
-    <p>En esta pagina y la pagina de la galeria presento algunas imagenes bonitas que encontre de este maravilloso
+    <h2 class="subtitle">Galeria de interiores y variados sacados de peliculas de Studio Ghibli</h2>
+    <p>En estas paginas de la galeria presento algunas imagenes bonitas que encontre de este precioso
         estudio.</p>
 
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/gallery/imangen9.jpg" class="d-block w-100" alt="...">
+    <div id="carousel-container">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="assets/gallery/imangen9.jpg" class="w-100" alt="...">
+                </div>
+                <div class="carousel-item active">
+                    <img src="assets/gallery/imangen22.jpg" class="w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/gallery/imangen24.jpg" class="w-100" alt="...">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="assets/gallery/imangen22.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/gallery/imangen24.jpg" class="d-block w-100" alt="...">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 </body>
 
