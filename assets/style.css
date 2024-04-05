@@ -83,3 +83,7 @@ img {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(57, 77, 90);
 }
+
+.col img {
+    max-width: 100%;
+}
