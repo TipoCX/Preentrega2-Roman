@@ -33,18 +33,6 @@ p {
     margin-inline: 2vw;
 }
 
-.col {
-    color: #b1b1b1;
-    display: flex;
-    justify-content: center;
-    width: 30vw;
-    padding-block: 10px;
-    padding-inline: 20px;
-    border: solid 1px #7f7f7f;
-    border-radius: 5px;
-    margin: 2px;
-}
-
 body {
     background-color: #2d2b30;
 }
@@ -84,6 +72,172 @@ img {
     background: rgb(57, 77, 90);
 }
 
-.col img {
-    max-width: 100%;
+.gallery {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.item1 {
+    background-image: url(../assets/gallery/imangen0.jpg);
+}
+
+.item2 {
+    background-image: url(../assets/gallery/imangen1.jpg);
+}
+
+.item3 {
+    background-image: url(../assets/gallery/imangen2.jpg);
+}
+
+.item4 {
+    background-image: url(../assets/gallery/imangen3.jpg);
+}
+
+.item5 {
+    background-image: url(../assets/gallery/imangen4.jpg);
+}
+
+.item6 {
+    background-image: url(../assets/gallery/imangen5.jpg);
+}
+
+.item7 {
+    background-image: url(../assets/gallery/imangen6.jpg);
+}
+
+.item8 {
+    background-image: url(../assets/gallery/imangen7.jpg);
+}
+
+.item9 {
+    background-image: url(../assets/gallery/imangen8.jpg);
+}
+
+.item10 {
+    background-image: url(../assets/gallery/imangen9.jpg);
+}
+
+.item11 {
+    background-image: url(../assets/gallery/imangen10.jpg);
+}
+
+.item12 {
+    background-image: url(../assets/gallery/imangen11.jpg);
+}
+
+.item13 {
+    background-image: url(../assets/gallery/imangen12.jpg);
+}
+
+.item14 {
+    background-image: url(../assets/gallery/imangen13.jpg);
+}
+
+.item15 {
+    background-image: url(../assets/gallery/imangen14.jpg);
+}
+
+.item16 {
+    background-image: url(../assets/gallery/imangen15.jpg);
+}
+
+.item17 {
+    background-image: url(../assets/gallery/imangen16.jpg);
+}
+
+.item18 {
+    background-image: url(../assets/gallery/imangen17.jpg);
+}
+
+.item19 {
+    background-image: url(../assets/gallery/imangen18.jpg);
+}
+
+.item20 {
+    background-image: url(../assets/gallery/imangen20.jpg);
+}
+
+.item21 {
+    background-image: url(../assets/gallery/imangen21.jpg);
+}
+
+.item22 {
+    background-image: url(../assets/gallery/imangen22.jpg);
+}
+
+.item23 {
+    background-image: url(../assets/gallery/imangen23.jpg);
+}
+
+.item24 {
+    background-image: url(../assets/gallery/imangen24.jpg);
+}
+
+.item25 {
+    background-image: url(../assets/gallery/imangen25.jpg);
+}
+
+.item26 {
+    background-image: url(../assets/gallery/imangen26.jpg);
+}
+
+.item27 {
+    background-image: url(../assets/gallery/imangen27.jpg);
+}
+
+.item28 {
+    background-image: url(../assets/gallery/imangen28.jpg);
+}
+
+.item29 {
+    background-image: url(../assets/gallery/imangen29.jpg);
+}
+
+.item30 {
+    background-image: url(../assets/gallery/imangen30.jpg);
+}
+
+.item31 {
+    background-image: url(../assets/gallery/imangen31.jpg);
+}
+
+.item32 {
+    background-image: url(../assets/gallery/imangen32.jpg);
+}
+
+.item33 {
+    background-image: url(../assets/gallery/imangen33.jpg);
+}
+
+.item34 {
+    background-image: url(../assets/gallery/imangen34.jpg);
+}
+
+.item35 {
+    background-image: url(../assets/gallery/imangen35.jpg);
+}
+
+.item {
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media only screen and (max-width:1000px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(18, 200px);
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(35, 200px);
+    }
 }
