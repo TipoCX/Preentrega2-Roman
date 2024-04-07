@@ -1,0 +1,232 @@
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #666464;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 100px;
+    padding-block: 20px;
+    background-color: #D6A445;
+}
+
+#icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    height: 30px;
+    background-color: #D6A445;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.navbtn {
+    margin-inline: 7px;
+    font-size: 30px;
+    padding: 15px;
+    transition: background-color 200ms, font-size 150ms;
+    border-radius: 3px;
+}
+
+.navbtn:hover {
+    font-size: 31px;
+    background-color: rgba(10, 10, 10, 0.1);
+}
+
+#inicio {
+    padding: 100px;
+    height: 612px;
+    background-image: url(assets/istockphoto-1309050902-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stocked-title {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: #666464;
+}
+
+.stocked-subtitle {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #666464;
+    font-size: 20px;
+    margin-inline: 200px;
+}
+
+#descarga {
+    display: flex;
+    flex-direction: row;
+    padding-block: 100px;
+    justify-content: space-around;
+    background-color: #D6D245;
+}
+
+#qr-img {
+    aspect-ratio: 1/1;
+    width: 350px;
+    border-radius: 60px;
+}
+
+.lorem {
+    font-size: 30px;
+    width: 350px;
+}
+
+#download-imgs {
+    display: flex;
+    flex-direction: row;
+}
+
+#ps {
+    margin-top: 50px;
+    width: 250px;
+}
+
+#as {
+    margin-block: 50px;
+    width: 250px;
+}
+
+.linksdwl {
+    margin-inline: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#cortepublicitario {
+    background-image: url("./assets/stock-photo-cheerful-happy-teen-asian-woman-enjoying-shopping-she-carrying-shopping.jpeg");
+    background-size: contain;
+    width: 100%;
+    height: 230px;
+    background-repeat: repeat-x;
+}
+
+#servicio {
+    background-image: linear-gradient(#D69D45, #D6AF45);
+    padding: 100px;
+}
+
+#cardcont {
+    width: 100%;
+    margin-top: 40px;
+    display: grid;
+    column-gap: 200px;
+    row-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 100px;
+}
+
+.card {
+    border: 2px solid #666464;
+    border-radius: 15px;
+    padding: 60px;
+    font-size: 23px;
+}
+
+.icon-serv {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nosotros {
+    background-color: #A8D645;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+#contacto {
+    background-color: #7D6F49;
+    padding: 100px;
+}
+
+#contacto h2 {
+    color: #DCDCDC;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infop {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#mensaje {
+    height: 200px;
+    width: 400px;
+    margin: 100px;
+    resize: none;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    font-size: 20px;
+}
+
+#sendformdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+}
+
+#sendform {
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
