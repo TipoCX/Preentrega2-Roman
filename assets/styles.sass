@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap')
+
+*
+    font-family: "Cabin", sans-serif
+    font-optical-sizing: auto
+    font-weight: 400
+    font-style: normal
+    font-variation-settings: "wdth" 100
+    color: #999999
+
+.navbar
+    position: sticky
+    top: 0
+    min-width: 100%
+
+.navbar-custom
+    background-color: #c5c5cd
+
+h2
+    color: #999999
+
+    &-brand
+        color: #b1b1b1
+
+.subtitle
+    margin-top: 5vh
+    margin-inline: 2vw
+
+p
+    color: #7f7f7f
+    margin-top: 5vh
+    padding-inline: 5vw
+    max-width: 100%
+
+body
+    background-color: #47475E
+
+.carousel
+    object-fit: contain
+    width: 100%
+    height: 60vh
+
+#carousel-container
+    display: flex
+    justify-content: center
+    padding: 30px
+
+::-webkit-scrollbar
+    width: 8px
+
+::-webkit-scrollbar-track
+    border-radius: 4px
+    background-color: #2d2b30
+
+::-webkit-scrollbar-thumb
+    background: rgb(47, 63, 74)
+    border-radius: 4px
+
+::-webkit-scrollbar-thumb:hover
+    background: rgb(57, 77, 90)
+
+.gallery
+    width: 100%
+    height: auto
+    display: grid
+    grid-template-columns: 3fr 3fr 3fr
+    grid-template-rows: repeat(8, 200px)
+    grid-gap: 20px
+    padding: 20px
+
+@for $n from 1 through 35
+    @if $n == 35
+        .item35
+            background-image: url('../assets/gallery/imangen19.jpg')
+    @else
+        @if $n <= 19
+            .item#{$n}
+                background-image: url('../assets/gallery/imangen' + #{$n - 1} + '.jpg')
+        @else
+            @if $n > 19 & $n < 35
+                .item#{$n}
+                    background-image: url('../assets/gallery/imangen' + #{$n} + '.jpg')
+
+.item
+    background-size: cover
+    background-position: center
+
+.card-description
+    background-color: #161633
+    display: flex
+    margin: 20px
+    padding: 15px
+    border-radius: 25px
+    p
+        color: #7f7f7f
+        margin-top: 5vh
+        padding-inline: 2vw
+        max-width: 90%
+    .cardimg
+        background-size: cover
+        background-position: 40%
+        background-repeat: no-repeat
+        margin-inline: 10px
+        border-radius: 10px
+        width: 100%
+.cardimgext
+    display: none
+    background-size: cover
+    background-position: 40%
+    background-repeat: no-repeat
+    border-radius: 10px
+    width: 95%
+    height: 180px
+    margin: 20px
+.row-bien
+    flex-direction: row
+.row-alreves
+    flex-direction: row-reverse
+#img0
+    background-image: url("/assets/gallery/imangen2.jpg")
+#img1
+    background-image: url("/assets/gallery/imangen4.jpg")
+#img2
+    background-image: url("/assets/gallery/imangen6.jpg")
+#img3
+    background-image: url("/assets/gallery/imangen8.jpg")
+#img4
+    background-image: url("/assets/gallery/imangen14.jpg")
+#img5
+    background-image: url("/assets/gallery/imangen16.jpg")
+@media only screen and (max-width:1000px)
+    *
+        font-size: 24px
+    .cardimg
+        display: none
+    .cardimgext
+        display: block
+    .gallery
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: repeat(18, 200px)
+
+@media only screen and (max-width:700px)
+    .gallery
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(35, 200px)
